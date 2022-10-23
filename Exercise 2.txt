@@ -1,0 +1,12 @@
+array = [1, 1, 2, 2, 3, 3]
+N = 3
+def remove_all_after(array, N):
+    if N not in array :
+        return array
+    else:
+        daval = array.index(N)
+        new = array[:daval + 1]
+        return new
+
+new_a = remove_all_after(array, N)
+print (new_a)
